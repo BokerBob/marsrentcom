@@ -12,8 +12,9 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: #000;
+      background: #f5f5f5;
       color: #666;
+      background: #000;
       height: 100vh;
       width: 100vw;
       overflow: hidden;
@@ -29,18 +30,19 @@
       justify-content: center;
       padding: 2rem;
       background: #000;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
       box-sizing: border-box;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #fff;
       margin-bottom: 0.5rem;
     }
 
     .tagline {
       font-size: 1.2rem;
-      color: #999;
+      color: #666;
       margin-bottom: 2rem;
       text-align: center;
     }
@@ -75,20 +77,21 @@
     }
 
     .latitude {
-      border: 2px solid #e77d11;
+      border: 2px solid #007bff;
       opacity: 0.5;
       transform: rotateX(var(--angle));
     }
 
     .meridian {
-      border: 1px solid #e77d11;
+      border: 1px solid #007bff;
       opacity: 0.2;
       transform: rotateY(var(--angle));
+      background: linear-gradient(to top, transparent, #e77d11, transparent);
     }
 
     .contact-button {
       display: inline-block;
-      background: #e77d11;
+      background: #007bff;
       color: white;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
@@ -97,7 +100,7 @@
     }
 
     .contact-button:hover {
-      background: #c66300;
+      background: #005ec4;
     }
 
     footer {
